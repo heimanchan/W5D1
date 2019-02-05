@@ -15,7 +15,10 @@
 	border-bottom: 2px solid white;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+}
 
+.language-nav > ul > li:first-of-type {
+	font-weight: bold;
 }
 
 .language-nav a {
@@ -29,6 +32,10 @@
 .language-nav ul {
 	display: flex;
 	list-style-type:none;
+}
+
+.language-nav ul li:hover {
+	text-decoration: underline;
 }
 
 .masthead-content {
@@ -52,10 +59,10 @@
 }
 
 .masthead-links li {
-	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-right: 1px solid $light-gray;
-	list-style-type:none;
-
+	list-style-type: none;
 }
 
 .masthead-links button {
@@ -82,4 +89,16 @@
 
 .masthead-links strong {
 	color: green;
+}
+
+.masthead-links > li:last-of-type {
+	border-right: 1px solid white;
+}
+
+.masthead-links a:hover {
+	text-decoration: underline;
+}
+
+.masthead-links li:hover {
+	background-color: $lightest-gray;
 }
